@@ -5,6 +5,8 @@
 #include <QWizard>
 class QWizardPage;
 class QPixmap;
+class QLabel;
+class QLineEdit;
 class my_wizard : public QWizard
 {
 public:
@@ -12,7 +14,11 @@ public:
 
 private:
     QWizardPage *page;
-//    QPixmap *banner;
+    QLabel *class_name;
+    QLabel *base_class;
+
+    QLineEdit *myPushButton;
+    QLineEdit *qPushButton;
 };
 
 #endif // MY_WIZARD_H
